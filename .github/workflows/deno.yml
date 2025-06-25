@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembuat Twibbon - MPLS 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <h1>Buat Twibbon MPLS 2025 Anda</h1>
+        <p>Unggah foto Anda, sesuaikan posisinya di dalam bingkai, lalu unduh hasilnya!</p>
+        
+        <div class="canvas-wrapper">
+            <canvas id="twibbon-canvas"></canvas>
+        </div>
+
+        <div class="controls">
+            <input type="file" id="image-loader" accept="image/*" style="display: none;">
+            <button id="upload-btn" class="btn">Pilih Foto</button>
+            <button id="download-btn" class="btn" disabled>Unduh Gambar</button>
+            <button id="reset-btn" class="btn" disabled>Reset</button>
+        </div>
+        
+        <div class="instructions">
+            <p><strong>Tips:</strong> Gunakan roda mouse untuk zoom. Tahan 'Alt' lalu klik & seret untuk menggeser.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
